@@ -1,0 +1,62 @@
+.image-menu {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.menu {
+    background-color: $dark-grey;
+    padding: 25px 5% 50px 5%;
+    border-radius: 50px 50px 0px 0px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+
+    .titre {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &--text {
+            width: 80%;
+        }
+    }
+
+    .heart {
+
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    gap: 15px;
+    padding: 10px 0px;
+
+    .trait {
+        margin-top: 5px;
+        height: 3px;
+        width: 30px;
+        background-color: $tertiary-color;
+    }
+}

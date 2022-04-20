@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  width: 100%;
+  margin: 0px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  margin: 0px;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin: 0px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.titre--text {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+}
+
+.sous-titre {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3px;
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  left: 5%;
+}
+
+header a i {
+  font-size: 1.5rem;
+}
+
+header img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 30px;
+}
+
+.image-menu {
+  width: 100%;
+  height: auto;
+}
+
+.image-menu {
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.image-menu img {
+  width: 100%;
+}
+
+.menu {
+  background-color: #f2f2f2;
+  padding: 25px 5% 50px 5%;
+  border-radius: 50px 50px 0px 0px;
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 15px;
+}
+
+.menu .titre {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .titre--text {
+  width: 80%;
+}
+
+.menu .heart {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .heart i {
+  font-size: 1.5rem;
+}
+
+.liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: auto;
+  gap: 15px;
+  padding: 10px 0px;
+}
+
+.liste .trait {
+  margin-top: 5px;
+  height: 3px;
+  width: 30px;
+  background-color: #99E2D0;
+}
+
+.carte-repas {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carte-repas--infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 95%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px 10px 10px;
+}
+
+.carte-repas--infos div {
+  width: 100%;
+}
+
+.carte-repas--infos div h2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  margin: none;
+  font-size: 1.1rem;
+}
+
+.carte-repas--infos div p {
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 95%;
+  margin: none;
+}
+
+.carte-repas--infos h3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.carte-repas i {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  width: 15%;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.carte-repas:hover {
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.carte-repas:hover .carte-repas--infos {
+  width: 75%;
+}
+
+.carte-repas:hover i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carte-repas:hover div {
+  width: 85%;
+}
+
+.heart .fa-heart {
+  font-size: 1.5rem;
+}
+
+.heart .fa-solid {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none;
+}
+
+.heart:hover .fa-solid {
+  display: block;
+  opacity: 1;
+}
+
+.heart:hover .fa-regular {
+  display: none;
+}
+
+button {
+  border-radius: 25px;
+  height: 50px;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(340deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(340deg, #a16be0 0%, #ff93e1 100%);
+}
+
+footer {
+  height: 220px;
+  background-color: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+footer .footer__content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  height: 60%;
+}
+
+footer i {
+  width: 25px;
+}
+
+footer img {
+  height: 1.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+/*# sourceMappingURL=menus.css.map */

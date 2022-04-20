@@ -1,0 +1,342 @@
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* Fonts*/
+
+h1 {
+    margin: 0px;
+    font-size: 1.6rem;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 0px;
+    font-size: 1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3px;
+}
+
+header img {
+    width: 50%;
+}
+
+/* Localisation */
+.localisation {
+    background-color: #e1e1e1;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.localisation div {
+    flex-direction: row;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.localisation p {
+    font-weight: bold;
+}
+
+.fa-location-dot {
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Presentation*/
+.presentation {
+    background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.presentation div {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 90%;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.presentation button {
+    border-radius: 25px;
+    height: 50px;
+    width: 60%;
+    align-self: center;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    background: linear-gradient(340deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.presentation button:hover {
+    background: linear-gradient(340deg, rgba(147, 86, 220, 0.8) 0%, rgba(255, 121, 218, 0.8) 100%);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Fonctionnement */
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+.fonctionnement h1 {
+    align-self: flex-start;
+}
+
+.fonctionnement>div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.etapes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 97%;
+    height: 60px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    align-self: flex-end;
+}
+
+.etapes--content {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    gap: 20px;
+    left: -10px;
+}
+
+.etapes--content i {
+    font-size: 1rem;
+    width: 20px;
+    color: #808080;
+}
+
+.etapes--text {
+    font-weight: bold;
+}
+
+.etapes--number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #9356DC;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+}
+
+.etapes--number p {
+    font-size: 0.8rem;
+}
+
+.etapes:hover {
+    background-color: rgba(147, 86, 220, 0.2)
+}
+
+.etapes:hover i {
+    color: #9356DC;
+}
+
+
+/* Restaurants */
+
+.restaurants {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+}
+
+.restaurants>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 95%;
+    justify-content: space-evenly;
+}
+
+.restaurants h1 {
+    align-self: flex-start;
+}
+
+.cards {
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cards:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.cards__image {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.cards__image img {
+    width: 100%;
+    object-position: 0px -50px;
+}
+
+#note-enchantee {
+    object-position: 0px -150px;
+}
+
+.cards--nouveau {
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    color: #008766;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.cards__part2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.cards--text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+.fa-heart {
+    font-size: 1.5rem;
+}
+
+.heart .fa-solid {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(147, 86, 220, 1)), to(rgba(255, 121, 218, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: none;
+}
+
+.heart:hover .fa-solid {
+    display: block;
+}
+
+.heart:hover .fa-regular {
+    display: none;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    height: 220px;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.footer__content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    height: 60%;
+}
+
+footer i {
+    width: 25px;
+}
+
+footer * {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer img {
+    height: 1.2rem;
+    width: fit-content;
+    filter: invert(100%);
+}

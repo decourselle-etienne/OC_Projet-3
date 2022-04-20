@@ -1,0 +1,39 @@
+footer {
+    height: 220px;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        justify-content: space-evenly;
+        align-content: flex-start;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: flex-start;
+            height: 60%;
+        }
+    }
+
+    i {
+        width: 25px;
+    }
+
+    img {
+        height: 1.2rem;
+        width: fit-content;
+        filter: invert(100%);
+    }
+}

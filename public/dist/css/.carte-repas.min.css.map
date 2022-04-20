@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,AAAC,CACT,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,GAAG,CACtB",
+    "sources": [
+        "../../../sass/component/.carte-repas.scss"
+    ],
+    "names": [],
+    "file": ".carte-repas.min.css"
+}
