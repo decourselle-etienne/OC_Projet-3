@@ -10,6 +10,13 @@
     h1 {
         align-self: flex-start;
     }
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1100px;
+    }
 }
 
 .cards {
@@ -71,4 +78,43 @@
 
 #note-enchantee {
     object-position: 0px -150px;
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+
+    .restaurants {
+        height: 400px;
+
+
+        >div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 300px;
+            align-items: center;
+        }
+    }
+
+    .cards {
+        width: 20%;
+        height: 200px;
+
+        &__image {
+            width: 100%;
+            height: 65%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                object-position: 0px -50px;
+            }
+        }
+
+        &__part2 {
+            height: 35%;
+        }
+    }
 }

@@ -77,7 +77,10 @@ header {
 }
 
 header img {
-  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 30px;
 }
 
 .localisation {
@@ -151,6 +154,20 @@ button:hover {
   background: linear-gradient(340deg, #a16be0 0%, #ff93e1 100%);
 }
 
+/* Tablette */
+@media screen and (min-width: 820px) {
+  button {
+    max-width: 250px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  button {
+    max-width: 250px;
+  }
+}
+
 .fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,6 +189,24 @@ button:hover {
 .fonctionnement h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.fonctionnement--etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 97%;
+  height: 300px;
 }
 
 .etapes {
@@ -251,6 +286,43 @@ button:hover {
   font-size: 0.8rem;
 }
 
+/* Tablette */
+@media screen and (min-width: 820px) {
+  .etapes {
+    max-width: 600px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .fonctionnement--etapes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 97%;
+    height: 150px;
+  }
+  .etapes {
+    max-width: 30%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .restaurants {
   background-color: #f2f2f2;
   display: -webkit-box;
@@ -273,6 +345,20 @@ button:hover {
 .restaurants h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.restaurants > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 1100px;
 }
 
 .cards {
@@ -359,6 +445,46 @@ button:hover {
 #note-enchantee {
   -o-object-position: 0px -150px;
      object-position: 0px -150px;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .restaurants {
+    height: 400px;
+  }
+  .restaurants > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards {
+    width: 20%;
+    height: 200px;
+  }
+  .cards__image {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+  }
+  .cards__image img {
+    width: 100%;
+    -o-object-position: 0px -50px;
+       object-position: 0px -50px;
+  }
+  .cards__part2 {
+    height: 35%;
+  }
 }
 
 .heart .fa-heart {

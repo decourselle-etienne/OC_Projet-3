@@ -14,3 +14,19 @@ button {
     }
 
 }
+
+/* Tablette */
+
+@media screen and (min-width: 820px) {
+    button {
+        max-width: 250px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+    button {
+        max-width: 250px;
+    }
+}

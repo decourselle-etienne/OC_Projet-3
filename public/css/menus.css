@@ -329,6 +329,20 @@ button:hover {
   background: linear-gradient(340deg, #a16be0 0%, #ff93e1 100%);
 }
 
+/* Tablette */
+@media screen and (min-width: 820px) {
+  button {
+    max-width: 250px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  button {
+    max-width: 250px;
+  }
+}
+
 footer {
   height: 220px;
   background-color: #303030;
