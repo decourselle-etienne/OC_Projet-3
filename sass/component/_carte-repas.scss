@@ -7,6 +7,9 @@
     border-radius: 10px;
     justify-content: space-between;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    overflow: hidden;
+
 
     &--infos {
         display: flex;
@@ -15,6 +18,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px 10px 10px;
+        transition: all 450ms;
 
         div {
             width: 100%;
@@ -45,15 +49,24 @@
 
     }
 
-    i {
-        display: none;
+    .check-box {
+        display: flex;
+        margin-right: -15%;
         justify-content: center;
         align-items: center;
-        font-size: 1.5rem;
-        color: #ffffff;
         width: 15%;
+        max-width: 15%;
+        min-width: 15%;
         background-color: $tertiary-color;
         border-radius: 0px 10px 10px 0px;
+        transition: margin-right 450ms;
+
+        i {
+            font-size: 1.5rem;
+            color: #ffffff;
+            transition: transform 300ms 150ms ease-in-out;
+            ;
+        }
     }
 
     &:hover {
@@ -63,12 +76,34 @@
             width: 75%;
         }
 
-        i {
-            display: flex;
+        .check-box {
+            margin-right: 0;
+
+            i {
+                transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+            }
         }
 
         div {
             width: 85%;
         }
+    }
+}
+
+
+
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+
+    .carte-repas {
+        width: 30%;
+        height: 60px;
+        border-radius: 10px;
+        justify-content: space-between;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
     }
 }

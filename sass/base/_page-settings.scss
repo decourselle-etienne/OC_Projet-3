@@ -7,4 +7,19 @@ main {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1280px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 1920px;
+        align-self: center;
+        width: 100%;
+    }
 }

@@ -4,11 +4,27 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-
-    img {
-        width: 100%;
-    }
+    background-size: cover;
+    background-position: center;
 }
+
+.enchantee {
+    background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+
+}
+
+.francaise {
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.palette {
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.delice {
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
 
 .menu {
     background-color: $dark-grey;
@@ -29,14 +45,14 @@
         &--text {
             width: 80%;
         }
-    }
 
-    .heart {
 
-        width: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .heart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 10px;
+        }
 
         i {
             font-size: 1.5rem;
@@ -58,5 +74,35 @@
         height: 3px;
         width: 30px;
         background-color: $tertiary-color;
+    }
+}
+
+.choix {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    gap: 15px;
+    padding: 10px 0px;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+
+    .choix {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        gap: 15px;
+        padding: 10px 0px;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        .heart {
+            justify-content: flex-end;
+        }
     }
 }

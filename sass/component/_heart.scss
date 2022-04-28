@@ -1,22 +1,32 @@
 .heart {
+    position: relative;
 
     .fa-heart {
         font-size: 1.5rem;
+        position: absolute;
+        right: 10px;
+        top: -10px;
+    }
+
+    .fa-regular {
+        z-index: 1;
+        transition: all 400ms;
     }
 
     .fa-solid {
         background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        display: none;
+        z-index: 0;
+        opacity: 0;
+        transition: all 400ms;
     }
 
     &:hover .fa-solid {
-        display: block;
         opacity: 1;
     }
 
     &:hover .fa-regular {
-        display: none;
+        opacity: 0;
     }
 }
