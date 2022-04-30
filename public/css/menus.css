@@ -320,7 +320,7 @@ header img {
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  margin: none;
+  margin: 0px;
   font-size: 1.1rem;
 }
 
@@ -330,7 +330,7 @@ header img {
   white-space: nowrap;
   overflow: hidden;
   width: 95%;
-  margin: none;
+  margin: 0px;
 }
 
 .carte-repas--infos h3 {
