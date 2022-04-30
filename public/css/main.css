@@ -83,6 +83,109 @@ a {
   font-size: 1.1rem;
 }
 
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-animation: loader 400ms;
+          animation: loader 400ms;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  /* This declaration stops the animation from looping. */
+}
+
+.loader .ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  -webkit-animation: ball infinite 0.4s alternate;
+          animation: ball infinite 0.4s alternate;
+}
+
+.loader .b1 {
+  background-color: #9356DC;
+}
+
+.loader .b2 {
+  background-color: #FF79DA;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+
+.loader .b3 {
+  background-color: #99E2D0;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -2;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -2;
+  }
+}
+
+@-webkit-keyframes ball {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  98% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes ball {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  98% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
