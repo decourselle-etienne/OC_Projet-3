@@ -109,7 +109,6 @@ a {
           animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  /* This declaration stops the animation from looping. */
 }
 
 .loader .ball {

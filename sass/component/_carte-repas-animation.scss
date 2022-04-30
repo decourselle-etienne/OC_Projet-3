@@ -1,0 +1,33 @@
+.carte-repas {
+    animation: carte 600ms;
+    animation-fill-mode: forwards;
+}
+
+.c1 {
+    animation-delay: 50ms;
+}
+
+.c2 {
+    animation-delay: 100ms;
+}
+
+.c3 {
+    animation-delay: 150ms;
+}
+
+.c4 {
+    animation-delay: 200ms;
+}
+
+
+@keyframes carte {
+    0% {
+        opacity: 0%;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
